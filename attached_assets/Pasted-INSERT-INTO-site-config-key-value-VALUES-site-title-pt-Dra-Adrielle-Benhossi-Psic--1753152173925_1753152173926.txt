@@ -1,0 +1,30 @@
+INSERT INTO site_config (key, value) VALUES 
+('site_title', '{"pt": "Dra. Adrielle Benhossi - Psicóloga"}'),
+('general_info', '{"name": "Dra. Adrielle Benhossi", "crp": "08/123456", "siteName": "Dra. Adrielle Benhossi - Psicóloga", "description": "Psicóloga CRP 08/123456", "location": "Campo Mourão, Paraná"}'),
+('contact_info', '{"phone": "(44) 998-362-704", "email": "escutapsi@adrielle.com.br", "whatsapp": "5544998362704", "instagram": "@adriellebenhossi", "linkedin": "linkedin.com/in/adrielle-benhossi-75510034a"}'),
+('hero_section', '{"title": "Cuidando da sua saúde mental com carinho", "subtitle": "Psicóloga especializada em terapia cognitivo-comportamental", "buttonText1": "Agendar Consulta", "buttonText2": "Saiba Mais", "background": "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"}'),
+('about_section', '{"title": "Sobre Mim", "subtitle": "Conheça um pouco da minha trajetória", "aboutText": "Sou psicóloga formada há mais de 10 anos, especializada em terapia cognitivo-comportamental. Minha missão é ajudar pessoas a encontrarem equilíbrio emocional e bem-estar mental.", "aboutEducation": "Graduação em Psicologia - Centro Universitário Integrado", "aboutExperience": "Mais de 10 anos de experiência em atendimento clínico"}'),
+('services_section', '{"title": "Serviços", "subtitle": "Como posso te ajudar"}'),
+('testimonials_section', '{"title": "Depoimentos", "subtitle": "O que meus pacientes dizem"}'),
+('faq_section', '{"title": "Perguntas Frequentes", "subtitle": "Tire suas dúvidas"}'),
+('contact_section', '{"title": "Contato", "subtitle": "Vamos conversar"}'),
+('footer_section', '{"text": "© 2024 Dra. Adrielle Benhossi. Todos os direitos reservados."}');
+
+INSERT INTO services (title, description, icon, gradient, price, duration, show_price, show_duration, is_active, "order") VALUES 
+('Consulta Psicológica', 'Atendimento individual para adultos com foco em questões emocionais e comportamentais', 'Brain', 'from-blue-400 to-purple-500', 'R$ 120', '50 minutos', true, true, true, 1),
+('Terapia de Casal', 'Acompanhamento especializado para casais que buscam melhorar a comunicação e relacionamento', 'Heart', 'from-pink-400 to-red-500', 'R$ 150', '1 hora', true, true, true, 2),
+('Avaliação Psicológica', 'Processo de avaliação completa para diversos contextos (clínico, organizacional, forense)', 'FileText', 'from-green-400 to-blue-500', 'R$ 200', '2 horas', true, true, true, 3),
+('Orientação Profissional', 'Auxílio na escolha da carreira e desenvolvimento profissional', 'Briefcase', 'from-yellow-400 to-orange-500', '', '', false, false, true, 4);
+
+INSERT INTO testimonials (name, service, testimonial, rating, gender, is_active, "order") VALUES 
+('João Silva', 'Consulta Psicológica', 'Excelente profissional! Me ajudou muito a superar momentos difíceis. Recomendo!', 5, 'masculino', true, 1),
+('Maria Santos', 'Terapia de Casal', 'A terapia salvou nosso casamento. Dra. Adrielle é muito competente e acolhedora.', 5, 'feminino', true, 2),
+('Carlos Oliveira', 'Avaliação Psicológica', 'Processo muito bem conduzido. Resultados claros e orientações precisas.', 5, 'masculino', true, 3),
+('Ana Paula', 'Orientação Profissional', 'Me ajudou a encontrar meu caminho profissional. Muito grata!', 5, 'feminino', true, 4);
+
+INSERT INTO faq_items (question, answer, is_active, "order") VALUES 
+('Como funciona o atendimento online?', 'O atendimento online é realizado através de videochamada em plataforma segura, seguindo todas as diretrizes do CFP.', true, 1),
+('Qual a duração das sessões?', 'As sessões individuais têm duração de 50 minutos e as de casal 60 minutos.', true, 2),
+('Aceita convênio médico?', 'Trabalho como profissional particular, mas forneço recibo para reembolso pelo convênio.', true, 3),
+('Como agendar uma consulta?', 'Você pode agendar através do WhatsApp ou preenchendo o formulário de contato.', true, 4),
+('Atende emergências?', 'Para situações de emergência, entre em contato imediatamente ou procure o hospital mais próximo.', true, 5);
